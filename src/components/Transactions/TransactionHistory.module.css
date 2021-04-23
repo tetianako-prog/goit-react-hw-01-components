@@ -1,0 +1,16 @@
+.transaction-history {
+  width: 600px;
+  border-collapse: collapse;
+}
+
+.transaction-history th {
+  height: 40px;
+  background-color: #87ceeb;
+  border: 2px solid #e0e0e0;
+  text-transform: uppercase;
+}
+.transaction-history td {
+  text-align: center;
+  height: 40px;
+  border: 2px solid #e0e0e0;
+}
