@@ -8,15 +8,15 @@ const Statistics = ({ title, stats }) => (
     {title && <h2 className={styles.title}>{title}</h2>}
 
     <ul className={styles['stat-list']}>
-      {stats.map(item => {
+      {stats.map(({ id, label, percentage }) => {
         return (
           <li
-            key={item.id}
+            key={id}
             className={styles.item}
             style={{ backgroundColor: randColor() }}
           >
-            <span className={styles.label}>{item.label}</span>
-            <span>{item.percentage}%</span>
+            <span className={styles.label}>{label}</span>
+            <span>{percentage}%</span>
           </li>
         );
       })}
